@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #e0d5c0;
+    padding: 15px 20px;
+}
+
+nav h1 {
+    font-family: "Rubik Distressed", system-ui;
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: #4d3e2a;
+}
+
+nav img {
+    max-height: 80px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+.img-inicio {
+    margin: 1em;
+    max-height: 30rem;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el texto y la imagen */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    padding: 20px;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.contenedor p {
+    width: 60%;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.img-inicio {
+    width: 45%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 20px !important;
+}
+
+.parraf {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #4f4f4f;
+    /* Gris medio */
+    text-align: justify;
+    width: 50rem;
+}
+
+
+/* Primera letra destacada */
+.presentacion p::first-letter {
+    font-size: 4.15rem;
+    color: #b19560;
+    /* Marrón tipo "saddle brown" */
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    padding-right: 5px;
+}
+
+.img-preset {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 80rem;
+}
+
+.preguntas {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.pregunta {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.pregunta:hover {
+    background-color: #e0e0e0;
+}
+
+.respuesta {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s;
+    padding: 0 12px;
+}
+
+.respuesta.activa {
+    max-height: 500px;
+    opacity: 1;
+    padding: 12px;
+}
